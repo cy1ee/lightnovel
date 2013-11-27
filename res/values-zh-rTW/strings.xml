@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">輕國閱讀</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">輕國閱讀</string>
+    <string name="title_activity_novel_index">NovelIndexActivity</string>
+    <string name="title_activity_volume">VolumeActivity</string>
+    <string name="title_activity_chapter_content">ChapterContentActivity</string>
+    <string name="title_activity_search_result">SearchResultActivity</string>
+    <string name="title_activity_local_novel">LocalNovelActivity</string>
+    <string name="tab_mycabinet">我的收藏</string>
+    <string name="tab_animax_novel">動畫化小說</string>
+    <string name="tab_new_novel">最新小說</string>
+    <string name="search_hint">小說名稱 | 作者</string>
+    <string name="author">作者</string>
+    <string name="update_date_time">更新日期</string>
+    <string name="view_count">瀏覽</string>
+    <string name="add_to_cabinet">收藏</string>
+    <string name="goto_novel_index">小說目錄</string>
+    <string name="dialog_novel_index">小說目錄</string>
+    <string name="dialog_delete">刪除</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="toast_add_to_mycabinet">已收藏</string>
+    <string name="search_title">搜尋:</string>
+    <string name="tab_read_record">閱讀紀錄</string>
+    <string name="tab_downloaded_novel">個人下載</string>
+    <string name="tab_downloaded_management">下載管理</string>
+
+    <string-array name="action_array">
+        <item>線上閱覽</item>
+        <item>本地下載</item>
+    </string-array>
+
+</resources>

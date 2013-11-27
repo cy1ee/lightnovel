@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#d4fadf"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/progress_chapter_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:id="@+id/view_reload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"  
+            android:textSize="18sp"          
+            android:text="取得資料失敗" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_gravity="center"
+            android:paddingRight="5dip"
+            android:drawableLeft="@drawable/navigation_refresh"
+            android:background="@drawable/button_style"
+            android:gravity="center_vertical"
+            android:onClick="reload"
+            android:text="重載" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/line_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:textSize="18sp" >
+    </ListView>
+
+</RelativeLayout>

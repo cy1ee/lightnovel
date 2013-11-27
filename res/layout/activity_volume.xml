@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/progress_volume_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:id="@+id/content_volume"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/volume_image"
+                android:layout_width="90dip"
+                android:layout_height="135dip"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="7dip"
+                android:src="@drawable/pngtest" >
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip" >
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/volume_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dip"
+                            android:layout_span="2"
+                            android:textSize="18sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/author"
+                            android:textColor="#a1a1a1" />
+
+                        <TextView
+                            android:id="@+id/author"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dip"
+                            android:textColor="#a1a1a1" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/update_date_time"
+                            android:textColor="#a1a1a1" />
+
+                        <TextView
+                            android:id="@+id/update_date_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dip"
+                            android:textColor="#a1a1a1" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/view_count"
+                            android:textColor="#a1a1a1" />
+
+                        <TextView
+                            android:id="@+id/view_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dip"
+                            android:textColor="#a1a1a1" />
+                    </TableRow>
+                </TableLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/btn_novel_index"
+                        android:layout_width="90dip"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginTop="12dip"
+                        android:background="@drawable/button_style"
+                        android:text="@string/goto_novel_index"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/volume_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/image_collapse_indocator"
+            android:layout_width="match_parent"
+            android:layout_height="15dip"
+            android:src="@drawable/navigation_collapse" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="6dip"
+            android:background="#d9d9d9" >
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableLayout
+                android:id="@+id/chapters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

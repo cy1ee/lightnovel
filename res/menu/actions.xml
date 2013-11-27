@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/action_search"
+        android:showAsAction="ifRoom"/>
+    
+    <item
+        android:id="@+id/action_list"
+        android:showAsAction="ifRoom"
+        android:actionLayout="@layout/action_spinner_layout"
+        />
+
+</menu>

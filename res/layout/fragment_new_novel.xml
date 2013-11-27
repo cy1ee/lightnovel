@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/progress_new_novel_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ListView
+        android:id="@+id/new_novel_list"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"        
+        android:cacheColorHint="#00000000"
+        android:divider="#d9d9d9"
+        android:dividerHeight="1px"
+        android:visibility="invisible" >
+    </ListView>
+
+</RelativeLayout>
